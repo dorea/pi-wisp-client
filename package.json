@@ -1,0 +1,46 @@
+{
+  "name": "pi-wisp-client",
+  "version": "0.3.0",
+  "type": "module",
+  "description": "Connect a pi session to a wisp-gateway as an agent (WeChat/QQ bridge client)",
+  "main": "src/index.ts",
+  "license": "MIT",
+  "keywords": [
+    "pi-package",
+    "pi",
+    "wisp",
+    "gateway",
+    "agent",
+    "wechat"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "pi": {
+    "extensions": [
+      "./src/index.ts"
+    ]
+  },
+  "files": [
+    "src",
+    "tsconfig.json",
+    "CHANGELOG.md",
+    "README.md"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@sinclair/typebox": "*"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "@sinclair/typebox": "^0.34.52",
+    "@types/node": "^22.10.5",
+    "typescript": "^5.7.0"
+  },
+  "dependencies": {
+    "smol-toml": "^1.9.0"
+  }
+}
